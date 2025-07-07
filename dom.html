@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    #d{
+    display: grid;
+    max-width: 500px;
+    height: 350px;
+    margin: 100px auto;
+    border: 2px solid red;
+    grid-template-rows: 1fr  70px 130px  1fr;
+    grid-template-columns: repeat(3,1fr);
+}
+#d1{
+    grid-column: 1/4;
+    background-color: blue;
+}
+
+#d2{
+    background-color: aqua;
+}
+#d3{
+    background-color: blueviolet;
+}
+#d4{
+    grid-row: 2/4;
+    grid-column: 3;
+    background-color: cadetblue;
+}
+#d5{
+    background-color: coral;
+}
+#d6{
+   background-color: rgb(38, 48, 48); 
+}
+#d7{
+    grid-row: 4;
+    grid-column: 1/4;
+    background-color: fuchsia;
+}
+    
+
+  </style>
+</head>
+<body>
+<div id="d">
+  <div id="d1">Home</div>
+  <div id="d2">Name</div>
+  <div id="d3">About</div>
+  <div id="d4">Contact</div>
+  <div id="d5">Services</div>
+  <div id="d6">Missioin</div>
+  <div id="d7">Eamil</div>
+</div>
+   
+</body>
+</html>
