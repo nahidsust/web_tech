@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  background-color: #2459de;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ensures it stays on top of other content */
+}
+
+section{
+  height: auto;
+}
+footer{
+  height: 100px;
+  background-color:#e7dede;
+}
+#list{
+    list-style-type: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+#list li a:hover{
+ color:deepskyblue;
+   transform: scale(1.1);
+}
+
+#list li{
+
+ 
+  padding: 13px 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-contacts a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.footer-contacts a:hover i {
+  color: #3bebc8;
+}
+
+.footer-contacts i {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.hero {
+ 
+  height: 45vw; 
+  position: relative;
+ 
+}
+
+.small-image {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+
+}
+#grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 70% 100%;
+  
+}
+#left {
+  margin-top: 50%;
+  margin-left: 17%;
+  width: 30vw;
+  height: 12vw;
+  display: grid;
+ 
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 7px;
+
+}
+
+#left div {
+  width: 100%;
+  height: 100%;
+  display: flex;               
+  justify-content: center;  
+  align-items: center;        
+  text-align: center;
+  font-weight: bold;
+  
+  color: rgb(5, 5, 5);
+  border-radius: 17%;
+  box-shadow: 3px 2px 2px rgb(239, 233, 233);
+
+   transition: transform 0.3s ease;
+}
+
+
+.section {
+  margin: 2% auto;
+  padding: 1rem;
+  max-width: 900px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2459de;
+}
+
+.section p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.skills-list {
+  list-style: decimal inside;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.6rem;
+}
+
+.education-item {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.education-year {
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  .section p, .skills-list li {
+    font-size: 0.95rem;
+  }
+}
+#left div:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px black;
+}
+</style>
+ 
+</head>
+<body >
+  <main>
+    <header  >
+      <ul id="list">
+        <li  ><a href="#image">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li ><a href="#education">Education</a></li>
+        <li><a href="#con">Contact</a></li>
+      </ul>
+    </header>
+
+
+<section id="image" >
+  <div class="hero" id="grid">
+         
+       <div id="left"  >
+           <div id="jjj"><img src="sprint.webp" style="width: 100%; height: 100%;"></img></div>
+           <div ><img src="mongo.png" style="width: 100%; height: 100%;"></img></div>
+           <div ><img src="Android_Studio_Logo_2024.svg.png" style="width: 100%; height: 50%;"></img></div>
+           <div ><img src="Unity_2021.svg.png" style="width: 100%; height: 100%;"></img></div>
+           <div><img src="Scikit_learn_logo_small.svg.png" style="width: 100%; height: 100%;"></img></div>
+           <div ><img src="MySQL_logo.svg.png"style="width: 100%; height: 100%;"></img></div>
+
+       </div>        
+        <div style="background-color: antiquewhite; border-radius: 5%;" id="right">
+             
+    <img src="myPic.jpg" alt="My photo" class="small-image" style="margin-top : 10%;margin-left: 40%;">
+    <h1 style="margin-left: 5%;">Welcome to My Portfolio</h1><br>
+<h2  style="margin-left: 5%;">Hi, I'm Nazmul Hoque</h2>
+<p style="margin-left: 5%;  font-size: larger;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+  A passionate Software Engineering student exploring Full-Stack Development, Machine Learning, and UVA.
+</p>
+        </div>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="section about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I'm <strong>Nazmul Hoque</strong>, a passionate Software Engineering student with a strong interest in building efficient, scalable, and user-friendly applications. I'm currently focused on developing full-stack web apps, exploring machine learning, and contributing to open-source projects.
+  </p>
+  <p>
+    I enjoy solving real-world problems with code and constantly learning new technologies. My current tech stack includes JavaScript, Java, Spring Boot, MongoDB, Firebase, Python, and frameworks like React, Express.js, Scikit-learn, and TensorFlow.
+  </p>
+  <p>
+    When I’m not coding, you’ll find me cycling, traveling, or exploring the latest in drone technology and AI.
+  </p>
+  <p>
+    I’m looking for exciting opportunities to grow and collaborate. Let’s build something impactful!
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li><strong>Languages:</strong> C/C++, Java, Python, C#, JavaScript</li>
+    <li><strong>Frameworks & Libraries:</strong> Spring Boot, Pandas, Scikit-learn, etc.</li>
+    <li><strong>Tools & Platforms:</strong> Git, Firebase, MongoDB, MySQL, etc.</li>
+  </ul>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section education">
+  <h2>🎓 Education</h2>
+  <div class="education-item">
+    <h3>B.Sc. in Software Engineering, IICT</h3>
+    <h4>Shahjalal University of Science and Technology, Sylhet, Bangladesh</h4>
+    <p class="education-year">2023 – Present</p>
+    <ul>
+      <li><strong>Relevant Courses:</strong> Data Structures, Machine Learning, Web Technology, DBMS</li>
+    </ul>
+  </div>
+</section>
+
+<footer id="con">
+
+   <div class="footer-contacts" >
+    <a href="tel:+8801837943242">
+      <i class="fas fa-phone"></i> 
+    </a>
+
+    <a href="mailto:nazmul1610449109@gmail.com">
+      <i class="fas fa-envelope"></i> 
+    </a>
+
+    <a href="https://github.com/nahidsust" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/nazmul-hoque-131ab7342" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  
+     
+  </div>
+    <p class="footer-rights" style="margin-top: 2px;">© 2025 Nazmul Hoque. All rights reserved.</p>
+</footer>
+  </main>
+ 
+</body>
+</html>
