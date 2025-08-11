@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        *{
+         
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+     
+        #d{
+            display: flex;
+            max-width: 700px;
+            height: 1000px;
+            box-shadow: 4px 4px 5px black    ;
+            
+            margin: 50px auto;
+           
+        }
+        #left{
+            text-align: center;
+            width: 46%;
+            background-color: rgb(12, 12, 12);
+         
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+        }
+        #right{
+            text-align: center;
+            background-color: bisque;
+            width: 80%;
+            display: grid;
+            grid-template-rows: .5fr .5fr 2fr 1fr;
+
+        }
+      
+   #x li{
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 4px;
+   }
+
+    </style>
+</head>
+<body>
+    <div id="d">
+        <div id="left">
+            <div id="pic">
+                <img src="pic.jpg" style="width: 64%; height: 64%;margin: 40px 45px;border-radius: 60%;">
+            </div>
+            <div id="contact">
+                <h2 style="color: white; font-weight: bold; ">Contact</h2>
+                <hr style="width: 50%; margin:auto; color: white;">
+                <h4 style="color: white; margin-top: 20px;">Address</h4>
+                <address style="color: white;">Sylhet,Bangladesh</address>
+                <h4 style="color: white ;margin-top: 6px;">Phone</h4>
+                <p style="color: white; margin-top: 3px;">01837943242</p>
+                <h4 style="color: white; margin-top: 5px;">Email</h4>
+                <p style="color: white;">nahid@gmail.com</p>
+            </div>
+            <div id="Skills " >
+                <h2 style="color: white;">Skills</h2>
+                <hr style="width: 50%; margin:auto; color: white;">
+                <ul id ="x"style="margin-top: 15px;" >
+                    <li style="color: white;">Java</li>
+                    <li style="color: white;">JavaScript</li>
+                    <li style="color: white;">C/C++</li>
+                    <li style="color: white;">Python</li>
+                    <li style="color: white;">Scikit-learn</li>
+                    <li style="color: white;">SQL</li>
+                </ul>
+            </div>
+            <div id="hobbies" >
+                <h2 style="color: white;">Hobbies</h2>
+                <hr style="width: 50%; margin:auto; color: white;">
+                <ul style="margin-top: 14px; font-size: 17px;">
+                    <li style="color: white;">Hiking</li>
+                    <li style="color: white;">Cycling</li>
+                    <li style="color: white;">Cooking</li>
+                    <li style="color: white;">Traveling</li>
+                </ul>
+            </div>
+             </div>
+        <div id="right">
+            <div id="name" >
+               <h1 style="margin-top: 20px;">NAZMUL HOQUE</h1>
+               <p style="margin-right: 30px; margin-top: 5px; font-size: 20px;">Software Engineering Student</p>
+            </div>
+            <div id="profile" style="text-align: left;">
+                <h2 style="color: rgb(15, 14, 14);margin-left: 20px;background-color: rgb(73, 205, 101);">Profile</h2>
+             
+                <p style="margin-left: 20px;margin-top: 5px;">Motivated 3rd-year Software Engineering undergraduate with hands-on experience in building real-world projects such as a blog app (Firebase backend) and a school management system. Proficient in Java, Spring Boot, MySQL, and front-end technologies like HTML, CSS, and JavaScript. Strong interest in web development and machine learning, with ongoing self-learning in data structures and algorithms.</p>
+            </div>
+            <div id="wa" style="text-align: left; overflow: auto;">
+                <h2 style="color: rgb(15, 14, 14);margin-left: 20px; margin-top: 20px; background-color: rgb(73, 205, 101);">Work experience</h2>
+            
+                <ul style="margin-left: 20px; list-style-type: none;">
+                    <li  style="margin-top: 10px;">
+                        Software Developer (Personal Project)
+                    Blog Application using Firebase
+                   Jan 2025 – Apr 2025
+                     Developed a full-featured blog app with user sign-up/login, post creation, and comment features using Java and Firebase.
+                   Implemented a clean UI using XML layouts and handled real-time database updates.
+                  Focused on Firebase Authentication and Firestore integration for secure and dynamic data storage.
+                    </li>
+                    <li style="margin-top: 10px;">
+                        Backend Developer (Academic Project)
+                       School Management System
+                        jun 2025 – Dec 2025
+                         Built a backend using Spring Boot and MySQL to manage students, teachers, and courses.
+                          Designed RESTful APIs and implemented role-based access control.
+                           Worked in a team of 3, using GitHub for version control and collaboration.
+                    </li>
+                    <li style="margin-top: 10px; ">
+                        Machine Learning Developer (Personal Project)
+                         Breast Cancer Prediction using Scikit-learn
+                         Jun 2025 – Jul 2025
+                             Developed a machine learning model to classify breast cancer tumors using the Breast Cancer Wisconsin dataset.
+                          Used Scikit-learn to implement logistic regression, decision trees, and random forest classifiers.
+                       Performed data preprocessing, feature scaling, and model evaluation using accuracy score, confusion matrix, and classification report.
+
+                    </li>
+                </ul>
+            </div>
+            <div id="edu" style="text-align: left;">
+                <div id="wa" style="text-align: left; margin-top: 20px;">
+                    <h2 style="color: rgb(15, 14, 14);margin-left: 20px; background-color: rgb(73, 205, 101);">Education</h2>
+                  
+                    <h3  style="margin-left: 20px; margin-top: 5px;">Bachelor of Science in Software Engineering</h3>
+                    <P style="margin-left: 20px; margin-top: 4px;">Shahjalal University of Science and Techonology,Sylhet,Bangladesh</P>
+                    <p style="margin-top: 4px; margin-left: 20px;">Feb 2023 - Present</p>
+            </div>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+</body>
+</html>
